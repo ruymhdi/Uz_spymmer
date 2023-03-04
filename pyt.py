@@ -43,15 +43,15 @@ def MAIN():
 				global proxies
 				phone9 = phone[1:]
 				try:
-					try:
-						phonee=mask(str=phone, maska="+# (###) ###-##-##")
-						requests.post("https://zoloto585.ru/api/bcard/reg/", json={"name":"","surname":"","patronymic":"","sex":"m","birthdate":"..","phone":phonee,"email":"","city":""}, proxies=proxies, timeout=10)
-					except:
-						pass
-					try:
+					#try:
+						#phonee=mask(str=phone, maska="+# (###) ###-##-##")
+						#requests.post("https://zoloto585.ru/api/bcard/reg/", json={"name":"","surname":"","patronymic":"","sex":"m","birthdate":"..","phone":phonee,"email":"","city":""}, proxies=proxies, timeout=10)
+					#except:
+					#	pass
+					#try:
 						requests.post("https://3040.com.ua/taxi-ordering", data={"callback-phone": phone}, proxies=proxies, timeout=10)
-					except:
-						pass
+					#except:
+					#	pass
 					try:
 						phonee=mask(str=phone[1:], maska="+(###)###-##-##")
 						requests.post("https://uzum.uz/uz#",data={"phone": phonee}, proxies=proxies, timeout=10)
