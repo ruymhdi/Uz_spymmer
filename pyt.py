@@ -53,7 +53,7 @@ def MAIN():
 					#except:
 					#	pass
 					try:
-						phonee=mask(str=phone[1:], maska="+(###)###-##-##")
+						phonee=mask(str=phone[1:], maska="(###)###-##-##")
 						requests.post("https://uzum.uz/uz#",data={"phone": phonee}, proxies=proxies, timeout=10)
 					except:
 						pass
